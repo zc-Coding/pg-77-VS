@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <button id="fadeIn" onclick="function()">show me the video!</button>
+    <p class="display-4">I enjoy this music video.</p>
+    <iframe class="display-4" width="560" height="315" src="https://www.youtube.com/embed/dDp3lfE_In8" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:none;"></iframe>
+</div>
+
+<script>
+    $(fadeIn).click(function() {
+        $("iframe").fadeIn("slow");
+    });
+</script>
